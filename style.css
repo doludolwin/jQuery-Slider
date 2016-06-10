@@ -1,0 +1,65 @@
+
+#hero{
+  width: 900px;
+  height: 500px;
+  position:relative;
+  margin: 50px auto;
+}
+#hero:hover #prev{
+  opacity: .7;
+  transition: all .4s ease-out;
+}
+#hero:hover #next{
+  opacity: .7;
+  transition: all .4s ease-out;
+}
+.info{
+  width: 900px;
+  position: absolute;
+  z-index: 99;
+  height: 80px;
+  top: 500px;
+  background-color: rgb(205,211,158);  
+  opacity: .0;
+}
+#hero:hover .info{
+  opacity: .5;
+  top:420px;
+  transition: all .4s ease-out;
+}
+.info h2{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 0 20px;
+  margin-top: 15px;
+}
+.info p{
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: black;
+  padding: 0 20px;
+  margin-top: -15px;
+}
+#slider{
+  width: 900px;
+  height: 500px;
+  position: absolute;
+  overflow: hidden;
+}
+#next{
+  position: absolute;
+  top:225px;
+  right: 7px;
+  z-index: 99;
+  cursor: pointer;
+  opacity: .2;
+}
+#prev{
+  position: absolute;
+  top:225px;
+  left: 7px;
+  z-index: 99;
+  cursor: pointer;
+  opacity: .2;
+}
